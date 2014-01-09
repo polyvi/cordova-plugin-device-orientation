@@ -31,3 +31,15 @@
 * [windows8] commandProxy was moved
 * Rename CHANGELOG.md -> RELEASENOTES.md
 * [CB-4752] Incremented plugin version on dev branch.
+
+### 0.3.2 (Oct 28, 2013)
+* orientation plugin
+* CB-5128: added repo + issue tag to plugin.xml for device orientation plugin
+* [CB-4915] Incremented plugin version on dev branch.
+
+### 0.3.3 (Dec 4, 2013)
+* add ubuntu platform
+* 1. Added amazon-fireos platform. 2. Change to use amazon-fireos as a platform if user agent string contains 'cordova-amazon-fireos'.
+
+### 0.3.4 (Jan 02, 2014)
+* CB-5658 Add doc/index.md for Compass plugin

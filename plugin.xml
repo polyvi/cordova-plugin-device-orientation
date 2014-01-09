@@ -3,12 +3,14 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="org.apache.cordova.device-orientation"
-    version="0.3.1">
+    version="0.3.4">
 
     <name>Device Orientation</name>
     <description>Cordova Device Orientation Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,device,orientation</keywords>
+    <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-device-orientation.git</repo>
+    <issue>https://issues.apache.org/jira/browse/CB/component/12320637</issue>
 
     <js-module src="www/CompassError.js" name="CompassError">
         <clobbers target="CompassError" />
@@ -21,6 +23,19 @@
     <js-module src="www/compass.js" name="compass">
         <clobbers target="navigator.compass" />
     </js-module>
+
+    <!-- firefoxos -->
+    <platform name="firefoxos">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Compass">
+                <param name="firefoxos-package" value="Compass" />
+            </feature>
+        </config-file>                                         
+        
+        <js-module src="src/firefoxos/compass.js" name="compass-impl">
+          <runs />
+        </js-module>
+    </platform>
 
     <!-- android -->
     <platform name="android">
@@ -36,6 +51,28 @@
         </config-file>
 
 	    <source-file src="src/android/CompassListener.java" target-dir="src/org/apache/cordova/deviceorientation" />
+    </platform>
+
+    <!-- amazon-fireos -->
+    <platform name="amazon-fireos">
+        <config-file target="res/xml/config.xml" parent="/*">
+	        <feature name="Compass">
+	            <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener"/>
+	        </feature>
+	    </config-file>
+
+	    <config-file target="AndroidManifest.xml" parent="/*">
+	        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        </config-file>
+
+	    <source-file src="src/android/CompassListener.java" target-dir="src/org/apache/cordova/deviceorientation" />
+    </platform>
+    
+    <!-- ubuntu -->
+    <platform name="ubuntu">
+        <header-file src="src/ubuntu/compass.h" />
+        <source-file src="src/ubuntu/compass.cpp" />
     </platform>
 
     <!-- blackberry10 -->
