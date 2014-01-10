@@ -22,3 +22,19 @@
 
 
 
+
+### 0.3.4 Fri Jan 10 2014 10:13:39 GMT+0800 (CST)
+ *  add RELEASENOTEX.md
+ *  CB-5719 Updated version and RELEASENOTES.md for release 0.3.4
+ *  CB-5658 Update license comment formatting of doc/index.md
+ *  CB-5658 Add doc.index.md for Compass plugin
+ *  CB-5658 Delete stale snapshot of plugin docs
+ *  [CB-5565] Incremented plugin version on dev branch.
+ *  [CB-5565] Updated version and RELEASENOTES.md for release 0.3.3
+ *  add ubuntu platform
+ *  1. Added amazon-fireos platform. 2. Change to use amazon-fireos as a platform if user agent string contains 'cordova-amazon-fireos'.
+ *  CB-5188:
+ *  [CB-5188] Updated version and RELEASENOTES.md for release 0.3.2
+ *  orientation plugin
+ *  CB-5128: added repo + issue tag to plugin.xml for device orientation plugin
+ *  [CB-4915] Incremented plugin version on dev branch.
