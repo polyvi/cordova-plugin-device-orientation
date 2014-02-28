@@ -40,3 +40,16 @@
  *  [CB-4915] Incremented plugin version on dev branch.
  *  batch modify .reviewboard
  *  sync cordova-mobile-spec test into cordova-plugin-device-orientation
+
+
+## 0.3.5 (Fri Feb 28 2014)
+
+
+ *  add test
+ *  CB-5980 Updated version and RELEASENOTES.md for release 0.3.5
+ *  [ubuntu] request sensors permission
+ *  [ubuntu] add missing files
+ *  Add support for Tizen.
+ *  FFOS info added
+ *  Delete stale test/ directory
+ *  CB-5719 Incremented plugin version on dev branch.
