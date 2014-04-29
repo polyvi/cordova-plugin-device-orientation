@@ -53,3 +53,16 @@
  *  FFOS info added
  *  Delete stale test/ directory
  *  CB-5719 Incremented plugin version on dev branch.
+
+
+## 0.3.6 (Tue Apr 29 2014)
+
+
+ *  CB-6452 Updated version and RELEASENOTES.md for release 0.3.6
+ *  CB-6465: Add license headers to Tizen code
+ *  CB-6460: Update license headers
+ *  CB-6381 unexpected error object [WP8]
+ *  CB-6422 [windows8] use cordova/exec/proxy
+ *  Add NOTICE file
+ *  CB-5980 Incremented plugin version on dev branch.
+ *  Incremented plugin version on dev branch to 0.3.6-dev
